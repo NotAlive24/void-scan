@@ -9,7 +9,6 @@
 - **Goroutine Worker Pool:** Replaces standard "shotgun" asynchronous architectures with a fixed pool model to strictly manage OS file descriptor limits and prevent local socket exhaustion.
 - **Granular Timing Control:** Implements 10 distinct speed levels (`-T1` to `-T10`) using a time-channel metronome logic to adapt seamlessly from stealthy network probing to intensive bandwidth mapping.
 - **Berserk Mode:** Overrides all safety thresholds to spin up 65,535 dedicated workers simultaneously, achieving raw unthrottled execution speeds.
-- **Banner Grabbing:** Reads incoming network handshakes dynamically to pull real-time version intelligence (e.g., identifying SSH or HTTP software strings).
 - **Signal Interception:** Traps `Ctrl+C` (`SIGINT/SIGTERM`) to gracefully close active network connections, restore terminal states, and return precise elapsed runtime analytics before exiting.
 
 ---
