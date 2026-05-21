@@ -10,6 +10,7 @@
 - **Granular Timing Control:** Implements 10 distinct speed levels (`-T1` to `-T10`) using a time-channel metronome logic to adapt seamlessly from stealthy network probing to intensive bandwidth mapping.
 - **Berserk Mode:** Overrides all safety thresholds to spin up 65,535 dedicated workers simultaneously, achieving raw unthrottled execution speeds.
 - **Signal Interception:** Traps `Ctrl+C` (`SIGINT/SIGTERM`) to gracefully close active network connections, restore terminal states, and return precise elapsed runtime analytics before exiting.
+- **Adaptive Timing:** Can now adapt it's scan speed on non-berserk scan according to the targets network latency reducing the number of missed ports. 
 
 ---
 
