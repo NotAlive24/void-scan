@@ -212,7 +212,8 @@ func engine(targetIP string, ports []int, workers int, rateLimit time.Duration, 
 
 // Main function
 func main() {
-
+	cyan := "\x1b[36m"
+	reset := "\x1b[0m"
 	icon := `
 __     ______   ____    _    _   _ 
 \ \   / / ___| / ___|  / \  | \ | |
@@ -220,7 +221,7 @@ __     ______   ____    _    _   _
   \ V /  ___) | |___ / ___ \| |\  |
    \_/  |____/ \____/_/   \_\_| \_|
 	`
-	fmt.Printf("%v", icon)
+	fmt.Println(cyan + icon + reset)
 	fmt.Println("Initializing VScan...\n")
 
 	targetIP, targetPort, timingLevel, isBerserk := Validate()
